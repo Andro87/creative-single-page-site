@@ -218,7 +218,7 @@ export default function Home() {
             </section>
             <footer className={styles.footer}>
                 <div className={styles.footer_container}>
-                    <h2>Let's build something great together.</h2>
+                    <h2>Let&apos;s build something great together.</h2>
                     <Button title="  Schedule a call" size="bigger" />
                 </div>
                 <div className={styles.wave_footer}></div>
