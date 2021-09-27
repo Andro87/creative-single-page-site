@@ -1,0 +1,320 @@
+@import "./variables.scss";
+
+.main_container {
+    width: 100%;
+    overflow: hidden;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 24px;
+    position: relative;
+    @media screen and (min-width: $tablet) {
+        padding: 0;
+        padding-left: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-left: 165px;
+    }
+}
+.hamburger_btn {
+    background: transparent;
+    border: none;
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+.navigation {
+    display: none;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        background-color: var(--Red);
+        min-width: 58%;
+        padding: 57px 40px 57px 25px;
+    }
+    @media screen and (min-width: $desktop) {
+        min-width: 49%;
+        padding: 56px 165px 56px 69px;
+    }
+    a {
+        text-decoration: none;
+        font-family: "commissioner";
+        font-weight: 400;
+        font-size: 0.83rem;
+        line-height: 1.78rem;
+        color: var(--White);
+        margin-right: 20px;
+        @media screen and (min-width: $desktop) {
+            font-size: 0.89rem;
+            margin-right: 32px;
+        }
+    }
+}
+
+.navigation_mobile {
+    position: absolute;
+    top: 100%;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--BgBlack);
+    width: 255px;
+    padding: 32px 27px 27px;
+    a {
+        text-decoration: none;
+        font-family: "commissioner";
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.78rem;
+        color: var(--White);
+        margin-bottom: 24px;
+    }
+}
+.main {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        position: relative;
+    }
+}
+.main_img {
+    width: 100%;
+    display: flex;
+    @media screen and (min-width: $tablet) {
+        width: 58%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 62%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.main_info {
+    padding: 56px 24px 96px;
+    @media screen and (min-width: $tablet) {
+        padding: 77px 0 150px 40px;
+        width: 400px;
+        position: relative;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 112px 0 160px 165px;
+        width: 730px;
+    }
+    p {
+        color: var(--TextBlack);
+        margin-top: 15px;
+        margin-bottom: 40px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 19px;
+            margin-bottom: 32px;
+        }
+        @media screen and (min-width: $desktop) {
+            margin-top: 39px;
+            margin-bottom: 48px;
+        }
+    }
+}
+.section_description {
+    width: 100%;
+}
+.design_container {
+    position: relative;
+}
+.design_img {
+    display: flex;
+    position: relative;
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: -120px;
+        width: 49%;
+    }
+    @media screen and (min-width: $desktop) {
+        bottom: -200px;
+        width: 51%;
+    }
+    img {
+        width: 100%;
+    }
+}
+.wave_red {
+    width: 60px;
+    height: 30px;
+    display: flex;
+    background: url("../public/desktop/bg-pattern-wave-red.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 24px;
+    bottom: -15px;
+    @media screen and (min-width: $tablet) {
+        left: initial;
+        bottom: initial;
+        top: 145px;
+        right: -30px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 135px;
+        height: 60px;
+        top: 200px;
+        right: -67.5px;
+    }
+}
+.design_info {
+    padding: 72px 24px;
+    background-color: var(--BgBlack);
+    color: var(--White);
+    @media screen and (min-width: $tablet) {
+        padding: 120px 40px;
+        margin-left: auto;
+        width: 51%;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 200px 106px 200px 154px;
+        width: 49%;
+    }
+    span {
+        color: var(--Red);
+    }
+    p {
+        margin-top: 24px;
+        margin-bottom: 40px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+        @media screen and (min-width: $desktop) {
+            margin-top: 43px;
+            margin-bottom: 48px;
+        }
+    }
+    a {
+        text-decoration: none;
+        font-family: "commissioner";
+        font-weight: 800;
+        font-size: 0.83rem;
+        color: var(--Red);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--Red);
+        &:hover {
+            color: var(--RedHover);
+            border-bottom: 2px solid var(--RedHover);
+        }
+        @media screen and (min-width: $desktop) {
+            font-size: 1rem;
+        }
+    }
+}
+.approach_container {
+    background-color: var(--Red);
+    padding: 96px 24px;
+
+    @media screen and (min-width: $tablet) {
+        padding: 0;
+        background-color: var(--White);
+        display: flex;
+    }
+}
+.approach_info {
+    margin-bottom: 50px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 0px;
+        padding-top: 246px;
+        padding-left: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0px;
+        padding-top: 400px;
+        padding-left: 165px;
+        position: absolute;
+        z-index: 4;
+        left: 0;
+    }
+    h2 {
+        color: var(--White);
+
+        @media screen and (min-width: $tablet) {
+            color: var(--TextBlack);
+            width: 280px;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 500px;
+        }
+    }
+}
+.approach_wrap {
+    @media screen and (min-width: $tablet) {
+        background-color: var(--Red);
+        padding: 120px 40px;
+        position: relative;
+        width: 58%;
+        margin-left: auto;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 62%;
+        padding: 200px 106px 200px 285px;
+    }
+}
+.section_slide {
+    width: 100%;
+}
+.embla {
+    overflow: hidden;
+}
+.embla__container {
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    padding: 100px 24px;
+    position: relative;
+    @media screen and (min-width: $tablet) {
+        padding: 70px 40px 100px 40px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 120px 165px;
+    }
+}
+.footer_container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h2 {
+        margin-bottom: 70px;
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 0;
+            width: 398px;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 635px;
+        }
+    }
+}
+.wave_footer {
+    display: none;
+    border: 1px soli royalblue;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        background: url("../public/desktop/bg-pattern-wave-red.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        width: 135px;
+        height: 60px;
+        top: 154px;
+        left: -67.5px;
+    }
+}

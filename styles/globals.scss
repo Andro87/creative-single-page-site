@@ -1,0 +1,79 @@
+@import "./variables.scss";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "commissioner";
+    src: url("../public/fonts/Commissioner-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "commissioner";
+    src: url("../public/fonts/Commissioner-Regular.ttf");
+    font-weight: 400;
+}
+
+:root {
+    --Red: hsla(0, 93%, 64%, 1);
+    --BgBlack: hsla(240, 14%, 11%, 1);
+    --White: hsla(0, 0%, 100%, 1);
+    --TextBlack: hsla(0, 0%, 0%, 1);
+    --RedHover: hsla(0, 100%, 79%, 1);
+    --BgBlackHover: hsla(240, 12%, 30%, 1);
+}
+html {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "commissioner";
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 2.22rem;
+    line-height: 2.22rem;
+    @media screen and (min-width: $tablet) {
+        font-size: 3.11rem;
+        line-height: 3.11rem;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 4.44rem;
+        line-height: 4.88rem;
+    }
+}
+h2 {
+    font-size: 1.78rem;
+    line-height: 2.22rem;
+    @media screen and (min-width: $desktop) {
+        font-size: 3.11rem;
+        line-height: 3.55rem;
+    }
+}
+
+h3 {
+    font-size: 0.83rem;
+    line-height: 1.39rem;
+    @media screen and (min-width: $desktop) {
+        font-size: 1.11rem;
+        line-height: 1.78rem;
+    }
+}
+
+p {
+    font-family: "commissioner";
+    font-weight: 400;
+    font-size: 0.83rem;
+    line-height: 1.39rem;
+    @media screen and (min-width: $desktop) {
+        font-size: 1rem;
+        line-height: 1.78rem;
+    }
+}

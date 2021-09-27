@@ -1,0 +1,39 @@
+@import "../styles/variables.scss";
+
+.button {
+    background-color: var(--Red);
+    color: var(--White);
+    font-family: "commissioner";
+    font-weight: 800;
+    cursor: pointer;
+    border: none;
+    &:hover {
+        background-color: var(--RedHover);
+    }
+}
+.bigger {
+    width: 200px;
+    padding: 22px;
+    font-size: 0.89rem;
+    @media screen and (min-width: $tablet) {
+        width: 150px;
+        padding: 23px 18px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 200px;
+    }
+}
+.smaller {
+    width: 177px;
+    padding: 25px;
+    font-size: 1rem;
+}
+.black {
+    @media screen and (min-width: $tablet) {
+        background-color: var(--BgBlack);
+        margin-left: 15px;
+        &:hover {
+            background-color: var(--BgBlackHover);
+        }
+    }
+}

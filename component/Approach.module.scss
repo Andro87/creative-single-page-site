@@ -1,0 +1,32 @@
+@import "../styles/variables.scss";
+
+.approach {
+    color: var(--White);
+    padding-top: 44px;
+    padding-left: 16px;
+    position: relative;
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 24px;
+        padding-left: 59px;
+    }
+    h3 {
+        margin-bottom: 15px;
+    }
+}
+
+.number {
+    font-family: "commissioner";
+    font-weight: 800;
+    font-size: 4.44rem;
+    opacity: 0.25;
+    position: absolute;
+    left: 0;
+}
+.margin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @media screen and (min-width: $desktop) {
+        margin-top: 56px;
+        margin-bottom: 56px;
+    }
+}

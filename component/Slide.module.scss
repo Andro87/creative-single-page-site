@@ -1,0 +1,113 @@
+@import "../styles/variables.scss";
+
+.embla__slide {
+    position: relative;
+    flex: 0 0 100%;
+    color: var(--White);
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+    }
+}
+
+.slide_img {
+    display: flex;
+    position: relative;
+    @media screen and (min-width: $tablet) {
+        width: 58%;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 62%;
+    }
+    picture {
+        display: flex;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
+.image_info {
+    position: absolute;
+    text-align: end;
+    right: 32px;
+    bottom: 35px;
+    @media screen and (min-width: $tablet) {
+        right: 40px;
+        bottom: 45px;
+    }
+    @media screen and (min-width: $desktop) {
+        right: 154px;
+        bottom: 68px;
+    }
+    h3 {
+        line-height: 2.22rem;
+        @media screen and (min-width: $tablet) {
+            line-height: 1.11rem;
+        }
+        @media screen and (min-width: $desktop) {
+            line-height: 1.78rem;
+        }
+    }
+}
+.slide_info {
+    background-color: var(--BgBlack);
+    padding: 64px 24px 64px;
+    @media screen and (min-width: $tablet) {
+        padding: 100px 70px 100px 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 51%;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 152px 125px 152px 165px;
+    }
+}
+.btn_wrap {
+    margin-top: 24px;
+    width: 96px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: $tablet) {
+        margin-top: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-top: 50px;
+    }
+}
+.btn {
+    background: transparent;
+    border: none;
+    svg {
+        &:hover {
+            cursor: pointer;
+            g {
+                stroke: var(--RedHover);
+            }
+        }
+    }
+}
+.wave_white {
+    display: none;
+    @media screen and (min-width: $tablet) {
+        width: 60px;
+        height: 30px;
+        display: flex;
+        background: url("../public/desktop/bg-pattern-wavy-white.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 126px;
+        right: -30px;
+        transform: rotateX(180deg);
+    }
+    @media screen and (min-width: $desktop) {
+        width: 135px;
+        height: 60px;
+        top: 186px;
+        right: -67.5px;
+        transform: rotateX(0);
+    }
+}
