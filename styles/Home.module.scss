@@ -130,7 +130,7 @@
 }
 .design_img {
     display: flex;
-    position: relative;
+
     @media screen and (min-width: $tablet) {
         position: absolute;
         top: 0;
@@ -146,30 +146,9 @@
         width: 100%;
     }
 }
-.wave_red {
-    width: 60px;
-    height: 30px;
-    display: flex;
-    background: url("../public/desktop/bg-pattern-wave-red.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    left: 24px;
-    bottom: -15px;
-    @media screen and (min-width: $tablet) {
-        left: initial;
-        bottom: initial;
-        top: 145px;
-        right: -30px;
-    }
-    @media screen and (min-width: $desktop) {
-        width: 135px;
-        height: 60px;
-        top: 200px;
-        right: -67.5px;
-    }
-}
+
 .design_info {
+    position: relative;
     padding: 72px 24px;
     background-color: var(--BgBlack);
     color: var(--White);
@@ -214,6 +193,29 @@
         }
     }
 }
+
+.wave_red {
+    width: 60px;
+    height: 30px;
+    display: flex;
+    background: url("../public/desktop/bg-pattern-wave-red.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 24px;
+    top: -15px;
+    @media screen and (min-width: $tablet) {
+        top: 145px;
+        left: -30px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 135px;
+        height: 60px;
+        top: 235px;
+        left: -67.5px;
+    }
+}
+
 .approach_container {
     background-color: var(--Red);
     padding: 96px 24px;

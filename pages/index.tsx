@@ -87,10 +87,10 @@ export default function Home() {
                             media="(min-width:700px)"
                         />
                         <img src="/mobile/image-strategic.jpg" alt="" />
-                        <div className={styles.wave_red}></div>
                     </picture>
 
                     <div className={styles.design_info}>
+                        <div className={styles.wave_red}></div>
                         <h2>
                             <span> Design </span> is strategic.
                         </h2>
