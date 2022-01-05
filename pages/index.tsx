@@ -171,7 +171,7 @@ export default function Home() {
                             image={
                                 <picture>
                                     <source
-                                        srcSet="/desktop/desktop-slide-2.jpg"
+                                        srcSet="/desktop/image-slide-2.jpg"
                                         media="(min-width:1200px)"
                                     />
                                     <source
